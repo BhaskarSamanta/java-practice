@@ -42,5 +42,8 @@ public class boxcode{
 
         Box bx = new Box(bo);
 
+        bx.volum();
+
+        sc.close();
     }
 } 
