@@ -23,6 +23,7 @@ class MyPoint {
         this.x = sc.nextInt();
         System.out.print("Enter y coordinate: ");
         this.y = sc.nextInt();
+        sc.close();
     }
 
     // Method to calculate gradient of line segment
@@ -31,7 +32,7 @@ class MyPoint {
             System.out.println("Cannot calculate gradient, points lie on a vertical line.");
             return Double.POSITIVE_INFINITY; // vertical line
         }
-        return (double) (n.y - m.y) / (n.x - m.x);
+        return (double)(n.y - m.y) / (n.x - m.x);
     }
 }
 
@@ -48,4 +49,3 @@ public class GradientCheck {
         System.out.println("Gradient of the line segment: " + gradient);
     }
 }
-
